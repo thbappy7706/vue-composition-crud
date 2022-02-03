@@ -71,7 +71,7 @@ class CompanyController extends Controller
      * @param \App\Models\Company $company
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Company $company): Response
+    public function destroy(Company $company)
     {
         $company->delete();
         return response()->noContent();
